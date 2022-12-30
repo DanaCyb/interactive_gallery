@@ -24,7 +24,7 @@ class Gallery {
         this.prevImage = this.prevImage.bind(this);
         this.chooseImage = this.chooseImage.bind(this);
         this.container.addEventListener('click',function(e){
-                    if (e.target.classList.container('img')){
+                    if (e.target.classList.contains('img')){
                         this.openModal(e.target,this.list);
                     }
                 }.bind(this)
